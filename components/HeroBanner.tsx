@@ -27,7 +27,7 @@ const HeroBanner: NextPage<Props> = ({ data }) => {
                 </div>
 
                 <div>
-                    <Link href={`/product/${data?._id}`} as="image">
+                    <Link href={`/product/${data?.product}`}>
                         <button type="button">{data?.buttonText}</button>
                     </Link>
                     <div className="desc">
