@@ -134,7 +134,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
     }
   }`;
     const products = await client.fetch(query);
-    console.log(products);
     const paths = products.map((product: { slug: { current: any } }) => ({
         params: {
             slug: product.slug.current,

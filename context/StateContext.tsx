@@ -140,9 +140,6 @@ export const StateContext = ({ children }: Props) => {
         setQty(1);
         toast.success(`${qty} ${product.name} added to the cart.`);
     };
-    useEffect(() => {
-        console.log(cartItems);
-    }, [cartItems]);
 
     const incQty = () => {
         setQty((prevQty) => prevQty + 1);

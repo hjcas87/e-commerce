@@ -685,10 +685,6 @@ span.text-red {
     .product-detail-container {
         flex-wrap: wrap;
     }
-    .product-detail-container .product-detail-image {
-        /* width: 350px;
-        height: 350px; */
-    }
     .cart-container {
         width: 415px;
         padding: 4px;

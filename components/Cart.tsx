@@ -29,7 +29,6 @@ const Cart = () => {
     } = useStateContext();
 
     const handleCheckout = async () => {
-        console.log(cartItems);
         const stripe = await getStripe();
 
         const response: res = await fetch('/api/stripe', {
@@ -43,8 +42,6 @@ const Cart = () => {
         if (response.statusCode === 500) return;
 
         const data = await response.json();
-        console.log(data);
-        console.log(cartItems[0].image[0].asset._ref);
 
         toast.loading('Redirecting...');
 
